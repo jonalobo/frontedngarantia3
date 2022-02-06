@@ -114,14 +114,14 @@ function spiner() {
 
 function imagen(marca) {
     if (marca === 'Epcom') {
-        const imgUrl = '../img/epcom1.jpg'
+        const imgUrl = 'img/epcom1.jpg'
         return imgUrl
     }
     if (marca === 'Dahua') {
-        const imgUrl = '../img/dahua.png'
+        const imgUrl = 'img/dahua.png'
         return imgUrl
     } else {
-        const imgUrl = '../img/Hikvision_logo.svg.png'
+        const imgUrl = 'img/Hikvision_logo.svg.png'
         return imgUrl
     }
 }
