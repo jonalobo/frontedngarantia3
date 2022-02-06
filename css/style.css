@@ -11,16 +11,24 @@ body {
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: rgb(71, 71, 71);
+    background-image: url('img/fondo.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .container {
-    width: 300px;
+    width: 500px;
     height: 500px;
-    background-color: aliceblue;
-    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
     -webkit-box-shadow: 5px 5px 15px 5px #000000; 
     box-shadow: 5px 5px 15px 5px #000000;
+    /* opacity: 0.93; */
 }
+@media (max-width: 600px) {
+    .container {
+        width: 365px;
+    }
+  }
 .logo {
     display: flex;
     justify-content: center;
@@ -33,11 +41,16 @@ body {
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 250px;
+    width: 450px;
     top: 3px;
     margin: auto;
     height: 200px;
 }
+@media (max-width: 600px) {
+    .formulario {
+        width: 300px;
+    }
+  }
 .respuesta {
     display: flex;
     justify-content: center;
@@ -47,7 +60,7 @@ body {
     top: 10px;
 }
 form {
-    width: 250px;
+    width: 450px;
     height: 200px;
     display: flex;
     justify-content: center;
@@ -56,6 +69,7 @@ form {
 }
 input {
     height: 45px;
+    width: 400px;
 }
 label {
     position: relative;
@@ -102,7 +116,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 130px;
+    width: 185px;
 }
 
 .error {
