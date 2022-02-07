@@ -1,6 +1,7 @@
 const btn = document.getElementById('btnConsulta')
 const URL = 'https://servidorgarantias.herokuapp.com/api/equipo?serie='
 const scripting = document.querySelector('.respuesta')
+const mError = document.querySelector('.mensaje-error')
 const serie = document.querySelector('input')
 const formulario = document.getElementById('form')
 
@@ -79,9 +80,9 @@ function manejoMensaje(respuesta,serie) {
         `
         const divError = document.createElement('div')
         divError.innerHTML = html
-        scripting.appendChild(divError)
+        mError.appendChild(divError)
         setTimeout(() => {
-            scripting.remove()
+            mError.remove()
             location.reload();
         }, 3000);
     }
